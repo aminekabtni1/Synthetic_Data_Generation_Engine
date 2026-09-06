@@ -1,0 +1,1 @@
+from syndata.generation.copula import GaussianCopulaSynthesizer

@@ -1,0 +1,24 @@
+[project]
+name = "syndata"
+version = "0.1.0"
+description = "Synthetic Data Generation Engine with Gaussian Copula & Differential Privacy"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "pandas==2.2.2",
+  "numpy==1.26.4",
+  "scipy==1.13.0",
+  "scikit-learn==1.5.0",
+  "fastapi==0.110.2",
+  "uvicorn==0.29.0",
+  "python-multipart==0.0.9",
+  "matplotlib==3.8.4",
+  "jinja2==3.1.4",
+  "click==8.1.7",
+]
+
+[project.scripts]
+syndata = "syndata.interface.cli:main"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
