@@ -1,0 +1,10 @@
+.git
+.pytest_cache
+__pycache__
+*.pyc
+tests
+data
+examples/*.csv
+!examples/customers.csv
+!examples/ecommerce.csv
+!examples/healthcare.csv
